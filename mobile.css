@@ -1,0 +1,89 @@
+/* mobile.css */
+
+/* Reset styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 363px;
+}
+
+/* Adjust container width for mobile */
+.container {
+    width: 90%;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+/* Adjust container2 width for mobile */
+.container2 {
+    margin-top:10px ;
+    left:135px; /* Add margin to create space between container and container2 */
+    top:45px; /* Adjust the top value to avoid overlap */
+    width:38%;
+    position:fixed;
+    font-size:x-small;
+}
+
+/* Adjust timer display font size for mobile */
+.timer-Display {
+    font-size: 2rem;
+}
+
+/* Adjust button styles for mobile */
+.buttons {
+    width: 100%;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 15px;
+}
+
+.buttons button {
+    padding: 10px 15px;
+    font-size: 1rem;
+}
+
+.buttons button:hover {
+    padding: 7px 12px;
+}
+
+/* Adjust footer width and font size for mobile */
+.footer {
+        position:absolute;
+        left:144px;
+        font-size:x-small;
+}
+
+/* Media query for screens up to 393 x 763 pixels */
+@media only screen and (max-width: 393px) {
+    /* Adjust container and container2 width for smaller screens */
+    .container  {
+        width: 95%;
+    }
+    .container2{
+        float: left;
+    }
+    /* Adjust timer display font size for smaller screens */
+    .timer-Display {
+        font-size: 1.5rem;
+    }
+
+    /* Adjust button styles for smaller screens */
+    .buttons {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .buttons button {
+        font-size: 0.8rem;
+        padding: 8px 10px;
+    }
+
+    .buttons button:hover {
+        padding: 5px 8px;
+    }
+
+    /* Adjust footer width and font size for smaller screens */
+    .footer {
+        position:absolute;
+        left:144px;
+        font-size:x-small;
+    }
+}
